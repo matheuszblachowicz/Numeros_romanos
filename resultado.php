@@ -1,5 +1,5 @@
 <?php
-include('helpers/url.php');
+include ('helpers/url.php');
 class Algarismos
 {
     private $romanos = [
@@ -32,10 +32,10 @@ class Algarismos
     {
         $romanos = $this->romanos;
         $romeno = '';
-        foreach ($romanos as $romaneio => $romanato) {
-            while ($arabe >= $romanato) {
-                $romeno .= $romaneio;
-                $arabe -= $romanato;
+        foreach ($romanos as $chaveamentor => $valorado) {
+            while ($arabe >= $valorado) {
+                $romeno .= $chaveamentor;
+                $arabe -= $chaveamentor;
             }
         }
         return $romeno;
@@ -44,6 +44,8 @@ class Algarismos
 $inicializar = new Algarismos();
 $numero = $_POST['numero'];
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +61,7 @@ $numero = $_POST['numero'];
         <div class="content-display">
             <h1>Numero convertido</h1>
             <p><?= $inicializar->RomaNizador($numero) ?></p>
-            <a class="home" href="<?= $HOME ?>exercicio/form.html">inicio</a>
+            <a class="home" href="<?= $HOME ?>exercicio/index.html">inicio</a>
         </div>
     </div>
 
