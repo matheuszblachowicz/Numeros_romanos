@@ -1,0 +1,73 @@
+/* style.css */
+.form-body {
+    background-image: url('https://www.simbolos.net.br/wp-content/uploads/2014/12/aguia-romana-simbolos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.gif-icon {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.title {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-div {
+    height: 500px;
+    width: 400px;
+    border: 6px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: auto;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #FFD700;
+    color: #fff;
+    padding: 10px;
+    width: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #E6BE00;
+}
