@@ -35,7 +35,7 @@ class Algarismos
         foreach ($romanos as $chaveamentor => $valorado) {
             while ($arabe >= $valorado) {
                 $romeno .= $chaveamentor;
-                $arabe -= $chaveamentor;
+                $arabe -= $valorado;
             }
         }
         return $romeno;
